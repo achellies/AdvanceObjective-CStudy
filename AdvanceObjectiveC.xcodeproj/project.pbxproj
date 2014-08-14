@@ -32,6 +32,29 @@
 		C88877C7199C421600B7FC8F /* BILib.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877BE199C421600B7FC8F /* BILib.m */; };
 		C88877C8199C421600B7FC8F /* BILibArg.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877C0199C421600B7FC8F /* BILibArg.m */; };
 		C88877C9199C421600B7FC8F /* BILibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877C4199C421600B7FC8F /* BILibUtils.m */; };
+		C8887804199C49C500B7FC8F /* ACAccountStore+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877CC199C49C500B7FC8F /* ACAccountStore+PromiseKit.m */; };
+		C8887805199C49C500B7FC8F /* AVAudioSession+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877CE199C49C500B7FC8F /* AVAudioSession+PromiseKit.m */; };
+		C8887808199C49C500B7FC8F /* CLGeocoder+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877D4199C49C500B7FC8F /* CLGeocoder+PromiseKit.m */; };
+		C8887809199C49C500B7FC8F /* CLLocationManager+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877D6199C49C500B7FC8F /* CLLocationManager+PromiseKit.m */; };
+		C888780A199C49C500B7FC8F /* MKDirections+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877E2199C49C500B7FC8F /* MKDirections+PromiseKit.m */; };
+		C888780B199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877E4199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m */; };
+		C888780C199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877E6199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.m */; };
+		C888780D199C49C500B7FC8F /* NSURLConnection+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877E8199C49C500B7FC8F /* NSURLConnection+PromiseKit.m */; };
+		C888780E199C49C500B7FC8F /* PMKPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877E9199C49C500B7FC8F /* PMKPromise.m */; };
+		C888780F199C49C500B7FC8F /* PMKPromise+Pause.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877EA199C49C500B7FC8F /* PMKPromise+Pause.m */; };
+		C8887810199C49C500B7FC8F /* PMKPromise+Until.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877EB199C49C500B7FC8F /* PMKPromise+Until.m */; };
+		C8887811199C49C500B7FC8F /* PMKPromise+When.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877EC199C49C500B7FC8F /* PMKPromise+When.m */; };
+		C8887812199C49C500B7FC8F /* NSMethodSignatureForBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877EE199C49C500B7FC8F /* NSMethodSignatureForBlock.m */; };
+		C8887813199C49C500B7FC8F /* xctest.rb in Resources */ = {isa = PBXBuildFile; fileRef = C88877EF199C49C500B7FC8F /* xctest.rb */; };
+		C8887814199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877F8199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m */; };
+		C8887815199C49C500B7FC8F /* SLRequest+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877FA199C49C500B7FC8F /* SLRequest+PromiseKit.m */; };
+		C8887816199C49C500B7FC8F /* tests in Resources */ = {isa = PBXBuildFile; fileRef = C88877FB199C49C500B7FC8F /* tests */; };
+		C8887817199C49C500B7FC8F /* UIActionSheet+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877FD199C49C500B7FC8F /* UIActionSheet+PromiseKit.m */; };
+		C8887818199C49C500B7FC8F /* UIAlertView+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877FF199C49C500B7FC8F /* UIAlertView+PromiseKit.m */; };
+		C8887819199C49C500B7FC8F /* UIView+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887801199C49C500B7FC8F /* UIView+PromiseKit.m */; };
+		C888781A199C49C500B7FC8F /* UIViewController+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887803199C49C500B7FC8F /* UIViewController+PromiseKit.m */; };
+		C8887826199C936F00B7FC8F /* OMGHTTPURLRQ.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887823199C936F00B7FC8F /* OMGHTTPURLRQ.m */; };
+		C8887827199C936F00B7FC8F /* OMGUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887825199C936F00B7FC8F /* OMGUserAgent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +112,64 @@
 		C88877C2199C421600B7FC8F /* BILibExclusives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILibExclusives.h; path = BlockInjection/BILibExclusives.h; sourceTree = "<group>"; };
 		C88877C3199C421600B7FC8F /* BILibUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILibUtils.h; path = BlockInjection/BILibUtils.h; sourceTree = "<group>"; };
 		C88877C4199C421600B7FC8F /* BILibUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BILibUtils.m; path = BlockInjection/BILibUtils.m; sourceTree = "<group>"; };
+		C88877CB199C49C500B7FC8F /* ACAccountStore+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ACAccountStore+PromiseKit.h"; path = "PromiseKit/ACAccountStore+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877CC199C49C500B7FC8F /* ACAccountStore+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ACAccountStore+PromiseKit.m"; path = "PromiseKit/ACAccountStore+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877CD199C49C500B7FC8F /* AVAudioSession+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVAudioSession+PromiseKit.h"; path = "PromiseKit/AVAudioSession+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877CE199C49C500B7FC8F /* AVAudioSession+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVAudioSession+PromiseKit.m"; path = "PromiseKit/AVAudioSession+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877CF199C49C500B7FC8F /* CKContainer+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CKContainer+PromiseKit.h"; path = "PromiseKit/CKContainer+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877D0199C49C500B7FC8F /* CKContainer+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CKContainer+PromiseKit.m"; path = "PromiseKit/CKContainer+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877D1199C49C500B7FC8F /* CKDatabase+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CKDatabase+PromiseKit.h"; path = "PromiseKit/CKDatabase+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877D2199C49C500B7FC8F /* CKDatabase+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CKDatabase+PromiseKit.m"; path = "PromiseKit/CKDatabase+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877D3199C49C500B7FC8F /* CLGeocoder+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLGeocoder+PromiseKit.h"; path = "PromiseKit/CLGeocoder+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877D4199C49C500B7FC8F /* CLGeocoder+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLGeocoder+PromiseKit.m"; path = "PromiseKit/CLGeocoder+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877D5199C49C500B7FC8F /* CLLocationManager+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocationManager+PromiseKit.h"; path = "PromiseKit/CLLocationManager+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877D6199C49C500B7FC8F /* CLLocationManager+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocationManager+PromiseKit.m"; path = "PromiseKit/CLLocationManager+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877D8199C49C500B7FC8F /* PromiseKit+Accounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+Accounts.h"; sourceTree = "<group>"; };
+		C88877D9199C49C500B7FC8F /* PromiseKit+AVFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+AVFoundation.h"; sourceTree = "<group>"; };
+		C88877DA199C49C500B7FC8F /* PromiseKit+CoreLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+CoreLocation.h"; sourceTree = "<group>"; };
+		C88877DB199C49C500B7FC8F /* PromiseKit+Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+Foundation.h"; sourceTree = "<group>"; };
+		C88877DC199C49C500B7FC8F /* PromiseKit+MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+MapKit.h"; sourceTree = "<group>"; };
+		C88877DD199C49C500B7FC8F /* PromiseKit+Social.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+Social.h"; sourceTree = "<group>"; };
+		C88877DE199C49C500B7FC8F /* PromiseKit+StoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+StoreKit.h"; sourceTree = "<group>"; };
+		C88877DF199C49C500B7FC8F /* PromiseKit+UIAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+UIAnimation.h"; sourceTree = "<group>"; };
+		C88877E0199C49C500B7FC8F /* PromiseKit+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PromiseKit+UIKit.h"; sourceTree = "<group>"; };
+		C88877E1199C49C500B7FC8F /* MKDirections+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MKDirections+PromiseKit.h"; path = "PromiseKit/MKDirections+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877E2199C49C500B7FC8F /* MKDirections+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MKDirections+PromiseKit.m"; path = "PromiseKit/MKDirections+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877E3199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MKMapSnapshotter+PromiseKit.h"; path = "PromiseKit/MKMapSnapshotter+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877E4199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MKMapSnapshotter+PromiseKit.m"; path = "PromiseKit/MKMapSnapshotter+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877E5199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+PromiseKit.h"; path = "PromiseKit/NSNotificationCenter+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877E6199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+PromiseKit.m"; path = "PromiseKit/NSNotificationCenter+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877E7199C49C500B7FC8F /* NSURLConnection+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+PromiseKit.h"; path = "PromiseKit/NSURLConnection+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877E8199C49C500B7FC8F /* NSURLConnection+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+PromiseKit.m"; path = "PromiseKit/NSURLConnection+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877E9199C49C500B7FC8F /* PMKPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKPromise.m; path = PromiseKit/PMKPromise.m; sourceTree = "<group>"; };
+		C88877EA199C49C500B7FC8F /* PMKPromise+Pause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PMKPromise+Pause.m"; path = "PromiseKit/PMKPromise+Pause.m"; sourceTree = "<group>"; };
+		C88877EB199C49C500B7FC8F /* PMKPromise+Until.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PMKPromise+Until.m"; path = "PromiseKit/PMKPromise+Until.m"; sourceTree = "<group>"; };
+		C88877EC199C49C500B7FC8F /* PMKPromise+When.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PMKPromise+When.m"; path = "PromiseKit/PMKPromise+When.m"; sourceTree = "<group>"; };
+		C88877EE199C49C500B7FC8F /* NSMethodSignatureForBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMethodSignatureForBlock.m; sourceTree = "<group>"; };
+		C88877EF199C49C500B7FC8F /* xctest.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = xctest.rb; sourceTree = "<group>"; };
+		C88877F1199C49C500B7FC8F /* fwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fwd.h; sourceTree = "<group>"; };
+		C88877F2199C49C500B7FC8F /* Promise+Pause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Promise+Pause.h"; sourceTree = "<group>"; };
+		C88877F3199C49C500B7FC8F /* Promise+Until.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Promise+Until.h"; sourceTree = "<group>"; };
+		C88877F4199C49C500B7FC8F /* Promise+When.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Promise+When.h"; sourceTree = "<group>"; };
+		C88877F5199C49C500B7FC8F /* Promise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
+		C88877F6199C49C500B7FC8F /* PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = PromiseKit/PromiseKit.h; sourceTree = "<group>"; };
+		C88877F7199C49C500B7FC8F /* SKProductsRequest+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKProductsRequest+PromiseKit.h"; path = "PromiseKit/SKProductsRequest+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877F8199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKProductsRequest+PromiseKit.m"; path = "PromiseKit/SKProductsRequest+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877F9199C49C500B7FC8F /* SLRequest+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SLRequest+PromiseKit.h"; path = "PromiseKit/SLRequest+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877FA199C49C500B7FC8F /* SLRequest+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SLRequest+PromiseKit.m"; path = "PromiseKit/SLRequest+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877FB199C49C500B7FC8F /* tests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tests; path = PromiseKit/tests; sourceTree = "<group>"; };
+		C88877FC199C49C500B7FC8F /* UIActionSheet+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+PromiseKit.h"; path = "PromiseKit/UIActionSheet+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877FD199C49C500B7FC8F /* UIActionSheet+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+PromiseKit.m"; path = "PromiseKit/UIActionSheet+PromiseKit.m"; sourceTree = "<group>"; };
+		C88877FE199C49C500B7FC8F /* UIAlertView+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+PromiseKit.h"; path = "PromiseKit/UIAlertView+PromiseKit.h"; sourceTree = "<group>"; };
+		C88877FF199C49C500B7FC8F /* UIAlertView+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+PromiseKit.m"; path = "PromiseKit/UIAlertView+PromiseKit.m"; sourceTree = "<group>"; };
+		C8887800199C49C500B7FC8F /* UIView+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+PromiseKit.h"; path = "PromiseKit/UIView+PromiseKit.h"; sourceTree = "<group>"; };
+		C8887801199C49C500B7FC8F /* UIView+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+PromiseKit.m"; path = "PromiseKit/UIView+PromiseKit.m"; sourceTree = "<group>"; };
+		C8887802199C49C500B7FC8F /* UIViewController+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+PromiseKit.h"; path = "PromiseKit/UIViewController+PromiseKit.h"; sourceTree = "<group>"; };
+		C8887803199C49C500B7FC8F /* UIViewController+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+PromiseKit.m"; path = "PromiseKit/UIViewController+PromiseKit.m"; sourceTree = "<group>"; };
+		C8887822199C936F00B7FC8F /* OMGHTTPURLRQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OMGHTTPURLRQ.h; path = PromiseKit/OMGHTTPURLRQ.h; sourceTree = "<group>"; };
+		C8887823199C936F00B7FC8F /* OMGHTTPURLRQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OMGHTTPURLRQ.m; path = PromiseKit/OMGHTTPURLRQ.m; sourceTree = "<group>"; };
+		C8887824199C936F00B7FC8F /* OMGUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OMGUserAgent.h; path = PromiseKit/OMGUserAgent.h; sourceTree = "<group>"; };
+		C8887825199C936F00B7FC8F /* OMGUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OMGUserAgent.m; path = PromiseKit/OMGUserAgent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +231,7 @@
 		C824EFEF1974F1CE0074EC5D /* AdvanceObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				C88877CA199C49B000B7FC8F /* PromiseKit */,
 				C88877B8199C420A00B7FC8F /* BlockInjection */,
 				C88877B4199C41A600B7FC8F /* DLIntrospection */,
 				C80F8FCF197767DD0086C986 /* tableview_header.png */,
@@ -229,6 +311,98 @@
 			name = BlockInjection;
 			sourceTree = "<group>";
 		};
+		C88877CA199C49B000B7FC8F /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				C8887822199C936F00B7FC8F /* OMGHTTPURLRQ.h */,
+				C8887823199C936F00B7FC8F /* OMGHTTPURLRQ.m */,
+				C8887824199C936F00B7FC8F /* OMGUserAgent.h */,
+				C8887825199C936F00B7FC8F /* OMGUserAgent.m */,
+				C88877CB199C49C500B7FC8F /* ACAccountStore+PromiseKit.h */,
+				C88877CC199C49C500B7FC8F /* ACAccountStore+PromiseKit.m */,
+				C88877CD199C49C500B7FC8F /* AVAudioSession+PromiseKit.h */,
+				C88877CE199C49C500B7FC8F /* AVAudioSession+PromiseKit.m */,
+				C88877CF199C49C500B7FC8F /* CKContainer+PromiseKit.h */,
+				C88877D0199C49C500B7FC8F /* CKContainer+PromiseKit.m */,
+				C88877D1199C49C500B7FC8F /* CKDatabase+PromiseKit.h */,
+				C88877D2199C49C500B7FC8F /* CKDatabase+PromiseKit.m */,
+				C88877D3199C49C500B7FC8F /* CLGeocoder+PromiseKit.h */,
+				C88877D4199C49C500B7FC8F /* CLGeocoder+PromiseKit.m */,
+				C88877D5199C49C500B7FC8F /* CLLocationManager+PromiseKit.h */,
+				C88877D6199C49C500B7FC8F /* CLLocationManager+PromiseKit.m */,
+				C88877D7199C49C500B7FC8F /* deprecated */,
+				C88877E1199C49C500B7FC8F /* MKDirections+PromiseKit.h */,
+				C88877E2199C49C500B7FC8F /* MKDirections+PromiseKit.m */,
+				C88877E3199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.h */,
+				C88877E4199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m */,
+				C88877E5199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.h */,
+				C88877E6199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.m */,
+				C88877E7199C49C500B7FC8F /* NSURLConnection+PromiseKit.h */,
+				C88877E8199C49C500B7FC8F /* NSURLConnection+PromiseKit.m */,
+				C88877E9199C49C500B7FC8F /* PMKPromise.m */,
+				C88877EA199C49C500B7FC8F /* PMKPromise+Pause.m */,
+				C88877EB199C49C500B7FC8F /* PMKPromise+Until.m */,
+				C88877EC199C49C500B7FC8F /* PMKPromise+When.m */,
+				C88877ED199C49C500B7FC8F /* Private */,
+				C88877F0199C49C500B7FC8F /* PromiseKit */,
+				C88877F6199C49C500B7FC8F /* PromiseKit.h */,
+				C88877F7199C49C500B7FC8F /* SKProductsRequest+PromiseKit.h */,
+				C88877F8199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m */,
+				C88877F9199C49C500B7FC8F /* SLRequest+PromiseKit.h */,
+				C88877FA199C49C500B7FC8F /* SLRequest+PromiseKit.m */,
+				C88877FB199C49C500B7FC8F /* tests */,
+				C88877FC199C49C500B7FC8F /* UIActionSheet+PromiseKit.h */,
+				C88877FD199C49C500B7FC8F /* UIActionSheet+PromiseKit.m */,
+				C88877FE199C49C500B7FC8F /* UIAlertView+PromiseKit.h */,
+				C88877FF199C49C500B7FC8F /* UIAlertView+PromiseKit.m */,
+				C8887800199C49C500B7FC8F /* UIView+PromiseKit.h */,
+				C8887801199C49C500B7FC8F /* UIView+PromiseKit.m */,
+				C8887802199C49C500B7FC8F /* UIViewController+PromiseKit.h */,
+				C8887803199C49C500B7FC8F /* UIViewController+PromiseKit.m */,
+			);
+			name = PromiseKit;
+			sourceTree = "<group>";
+		};
+		C88877D7199C49C500B7FC8F /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				C88877D8199C49C500B7FC8F /* PromiseKit+Accounts.h */,
+				C88877D9199C49C500B7FC8F /* PromiseKit+AVFoundation.h */,
+				C88877DA199C49C500B7FC8F /* PromiseKit+CoreLocation.h */,
+				C88877DB199C49C500B7FC8F /* PromiseKit+Foundation.h */,
+				C88877DC199C49C500B7FC8F /* PromiseKit+MapKit.h */,
+				C88877DD199C49C500B7FC8F /* PromiseKit+Social.h */,
+				C88877DE199C49C500B7FC8F /* PromiseKit+StoreKit.h */,
+				C88877DF199C49C500B7FC8F /* PromiseKit+UIAnimation.h */,
+				C88877E0199C49C500B7FC8F /* PromiseKit+UIKit.h */,
+			);
+			name = deprecated;
+			path = PromiseKit/deprecated;
+			sourceTree = "<group>";
+		};
+		C88877ED199C49C500B7FC8F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				C88877EE199C49C500B7FC8F /* NSMethodSignatureForBlock.m */,
+				C88877EF199C49C500B7FC8F /* xctest.rb */,
+			);
+			name = Private;
+			path = PromiseKit/Private;
+			sourceTree = "<group>";
+		};
+		C88877F0199C49C500B7FC8F /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				C88877F1199C49C500B7FC8F /* fwd.h */,
+				C88877F2199C49C500B7FC8F /* Promise+Pause.h */,
+				C88877F3199C49C500B7FC8F /* Promise+Until.h */,
+				C88877F4199C49C500B7FC8F /* Promise+When.h */,
+				C88877F5199C49C500B7FC8F /* Promise.h */,
+			);
+			name = PromiseKit;
+			path = PromiseKit/PromiseKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +480,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8887816199C49C500B7FC8F /* tests in Resources */,
+				C8887813199C49C500B7FC8F /* xctest.rb in Resources */,
 				C824F0021974F1CE0074EC5D /* Images.xcassets in Resources */,
 				C824EFF41974F1CE0074EC5D /* InfoPlist.strings in Resources */,
 				C80F8FD0197767DD0086C986 /* tableview_header.png in Resources */,
@@ -328,19 +504,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8887804199C49C500B7FC8F /* ACAccountStore+PromiseKit.m in Sources */,
 				C824F0001974F1CE0074EC5D /* AdvanceObjectiveCViewController.m in Sources */,
 				C88877C8199C421600B7FC8F /* BILibArg.m in Sources */,
+				C8887805199C49C500B7FC8F /* AVAudioSession+PromiseKit.m in Sources */,
+				C888780D199C49C500B7FC8F /* NSURLConnection+PromiseKit.m in Sources */,
 				C88877B7199C41B700B7FC8F /* NSObject+DLIntrospection.m in Sources */,
 				C81596901976383B004339C3 /* MethodSwizzle.m in Sources */,
+				C8887812199C49C500B7FC8F /* NSMethodSignatureForBlock.m in Sources */,
 				C88877C5199C421600B7FC8F /* BIItem.m in Sources */,
+				C8887811199C49C500B7FC8F /* PMKPromise+When.m in Sources */,
 				C824EFF61974F1CE0074EC5D /* main.m in Sources */,
 				C88877C6199C421600B7FC8F /* BIItemManager.m in Sources */,
+				C8887819199C49C500B7FC8F /* UIView+PromiseKit.m in Sources */,
+				C888780C199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.m in Sources */,
+				C8887826199C936F00B7FC8F /* OMGHTTPURLRQ.m in Sources */,
 				C88877C9199C421600B7FC8F /* BILibUtils.m in Sources */,
+				C888780B199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m in Sources */,
+				C888780F199C49C500B7FC8F /* PMKPromise+Pause.m in Sources */,
 				C824EFFA1974F1CE0074EC5D /* AdvanceObjectiveCAppDelegate.m in Sources */,
+				C8887815199C49C500B7FC8F /* SLRequest+PromiseKit.m in Sources */,
 				C8159688197624F0004339C3 /* block.c in Sources */,
+				C888780A199C49C500B7FC8F /* MKDirections+PromiseKit.m in Sources */,
+				C8887818199C49C500B7FC8F /* UIAlertView+PromiseKit.m in Sources */,
 				C80F8FD31977CD7A0086C986 /* NSObject+RuntimeProperty.m in Sources */,
+				C8887827199C936F00B7FC8F /* OMGUserAgent.m in Sources */,
+				C8887809199C49C500B7FC8F /* CLLocationManager+PromiseKit.m in Sources */,
 				C88877C7199C421600B7FC8F /* BILib.m in Sources */,
+				C888781A199C49C500B7FC8F /* UIViewController+PromiseKit.m in Sources */,
+				C8887814199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m in Sources */,
 				C815968F1976383B004339C3 /* JRSwizzle.m in Sources */,
+				C8887810199C49C500B7FC8F /* PMKPromise+Until.m in Sources */,
+				C8887817199C49C500B7FC8F /* UIActionSheet+PromiseKit.m in Sources */,
+				C888780E199C49C500B7FC8F /* PMKPromise.m in Sources */,
+				C8887808199C49C500B7FC8F /* CLGeocoder+PromiseKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

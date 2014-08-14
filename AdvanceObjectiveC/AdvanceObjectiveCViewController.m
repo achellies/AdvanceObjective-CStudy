@@ -15,12 +15,14 @@
 #import <sys/uio.h>
 #import <objc/objc-load.h>
 #import "NSObject+DLIntrospection.h"
+#import "PromiseKit/PromiseKit.h"
 
 @interface AdvanceObjectiveCViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSArray *topics ;
 }
 @property (assign, nonatomic, readwrite) NSString *kvo;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 void externalIntMethod(id self, SEL _cmd, int i) {
@@ -165,13 +167,14 @@ void uncaughtExceptionHandler(NSException *exception) {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    topics = @[ @"selector", @"objc_sendMsg", @"_cmd", @"imp", @"NSUncaughtExceptionHandler", @"block", @"kvo", @"shallow copy/deap copy",  @"swizzling", @"dynamic create protocol & class", @"dynamic method resolution", @"dynamic loading", @"message forwarding", @"keep unrecognized selector crash", @"类簇", @"run command"];
+    topics = @[ @"selector", @"objc_sendMsg", @"_cmd", @"imp", @"NSUncaughtExceptionHandler", @"block", @"kvo", @"shallow copy/deap copy",  @"swizzling", @"dynamic create protocol & class", @"dynamic method resolution", @"dynamic loading", @"message forwarding", @"keep unrecognized selector crash", @"类簇", @"run command", @"promise kit"];
 
     UIImage *image = [UIImage imageNamed:@"tableview_header.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(0, 0, self.tableView.frame.size.width, (image.size.height / image.size.width) * self.tableView.frame.size.width)];
     UIView *header = [[UIView alloc] initWithFrame:imageView.frame];
     [header addSubview:imageView];
+    self.imageView = imageView;
     self.tableView.tableHeaderView = header;
 
     self.tableView.dataSource = self;
@@ -245,6 +248,8 @@ void uncaughtExceptionHandler(NSException *exception) {
         [self testUnrecognizedSelector];
     } else if ([cell.textLabel.text isEqualToString:@"run command"]) {
         [self testRunCommand];
+    } else if ([cell.textLabel.text isEqualToString:@"promise kit"]) {
+        [self testPromiseKit];
     }
 }
 
@@ -812,6 +817,43 @@ NSString * runCommand(NSString* c) {
 -(void) testUnrecognizedSelector {
     objc_msgSend(self, sel_registerName("unknownMethod2:arg1:arg2:"), @"Message Forwarding");
     NSString *a = [self performSelector:sel_registerName("unknownMethod2:arg1:arg2:") withObject:@"Message Forwarding"];
+}
+
+#pragma mark - PromiseKit
+-(void)testPromiseKit {
+//    [NSURLConnection GET:@"http://promisekit.org/public/img/header.png"].then(^(UIImage *image) {
+//        self.imageView.image = image;
+//    }).then(^() {
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:@"图片加载成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alert show];
+//        [alert promise].then(^{
+//        });
+//    }).catch(^(NSError *error){
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alert show];
+//        [alert promise].then(^{
+//        });
+//    });
+
+    PMKPromise *promise1 = [NSURLConnection GET:@"http://promisekit.org/public/img/header.png"];
+    PMKPromise *promise2 = [UIView promiseWithDuration:0.3 animations:^{
+        self.imageView.frame = CGRectOffset(self.imageView.frame, 0, 200);
+    }];
+
+    [PMKPromise when:@[promise1, promise2]].then(^(NSArray *results){
+        UIImage *kittenImage = results[0];
+        NSNumber *animationCompleted = results[1];
+    }).then(^() {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:@"图片加载成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        [alert promise].then(^{
+        });
+    }).catch(^(NSError *error){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        [alert promise].then(^{
+        });
+    });;
 }
 
 @end
