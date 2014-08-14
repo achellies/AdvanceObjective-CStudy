@@ -564,7 +564,7 @@ NSString * runCommand(NSString* c) {
     NSString *temp = runCommand(@"ls -la /");
     printf([temp UTF8String]);
 
-    temp = runCommand(@"runcocoa po temp");
+    temp = runCommand(@"ps axu");
     printf([temp UTF8String]);
 }
 
