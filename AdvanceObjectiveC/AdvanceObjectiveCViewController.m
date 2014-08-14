@@ -14,6 +14,7 @@
 #import <unistd.h>
 #import <sys/uio.h>
 #import <objc/objc-load.h>
+#import "NSObject+DLIntrospection.h"
 
 @interface AdvanceObjectiveCViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSArray *topics ;
@@ -563,7 +564,7 @@ NSString * runCommand(NSString* c) {
     NSString *temp = runCommand(@"ls -la /");
     printf([temp UTF8String]);
 
-    temp = runCommand(@"pwd");
+    temp = runCommand(@"runcocoa po temp");
     printf([temp UTF8String]);
 }
 

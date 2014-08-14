@@ -26,6 +26,12 @@
 		C824F00B1974F1CE0074EC5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C824EFED1974F1CE0074EC5D /* UIKit.framework */; };
 		C824F0131974F1CE0074EC5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C824F0111974F1CE0074EC5D /* InfoPlist.strings */; };
 		C824F0151974F1CE0074EC5D /* AdvanceObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C824F0141974F1CE0074EC5D /* AdvanceObjectiveCTests.m */; };
+		C88877B7199C41B700B7FC8F /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877B6199C41B700B7FC8F /* NSObject+DLIntrospection.m */; };
+		C88877C5199C421600B7FC8F /* BIItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877BA199C421600B7FC8F /* BIItem.m */; };
+		C88877C6199C421600B7FC8F /* BIItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877BC199C421600B7FC8F /* BIItemManager.m */; };
+		C88877C7199C421600B7FC8F /* BILib.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877BE199C421600B7FC8F /* BILib.m */; };
+		C88877C8199C421600B7FC8F /* BILibArg.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877C0199C421600B7FC8F /* BILibArg.m */; };
+		C88877C9199C421600B7FC8F /* BILibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C88877C4199C421600B7FC8F /* BILibUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,20 @@
 		C824F0141974F1CE0074EC5D /* AdvanceObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvanceObjectiveCTests.m; sourceTree = "<group>"; };
 		C824F01E1974FBC00074EC5D /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
 		C824F0201975132D0074EC5D /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		C88877B5199C41B700B7FC8F /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+DLIntrospection.h"; path = "DLIntrospection/NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		C88877B6199C41B700B7FC8F /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DLIntrospection.m"; path = "DLIntrospection/NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
+		C88877B9199C421600B7FC8F /* BIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIItem.h; path = BlockInjection/BIItem.h; sourceTree = "<group>"; };
+		C88877BA199C421600B7FC8F /* BIItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIItem.m; path = BlockInjection/BIItem.m; sourceTree = "<group>"; };
+		C88877BB199C421600B7FC8F /* BIItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIItemManager.h; path = BlockInjection/BIItemManager.h; sourceTree = "<group>"; };
+		C88877BC199C421600B7FC8F /* BIItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIItemManager.m; path = BlockInjection/BIItemManager.m; sourceTree = "<group>"; };
+		C88877BD199C421600B7FC8F /* BILib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILib.h; path = BlockInjection/BILib.h; sourceTree = "<group>"; };
+		C88877BE199C421600B7FC8F /* BILib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BILib.m; path = BlockInjection/BILib.m; sourceTree = "<group>"; };
+		C88877BF199C421600B7FC8F /* BILibArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILibArg.h; path = BlockInjection/BILibArg.h; sourceTree = "<group>"; };
+		C88877C0199C421600B7FC8F /* BILibArg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BILibArg.m; path = BlockInjection/BILibArg.m; sourceTree = "<group>"; };
+		C88877C1199C421600B7FC8F /* BILibDummyStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILibDummyStruct.h; path = BlockInjection/BILibDummyStruct.h; sourceTree = "<group>"; };
+		C88877C2199C421600B7FC8F /* BILibExclusives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILibExclusives.h; path = BlockInjection/BILibExclusives.h; sourceTree = "<group>"; };
+		C88877C3199C421600B7FC8F /* BILibUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BILibUtils.h; path = BlockInjection/BILibUtils.h; sourceTree = "<group>"; };
+		C88877C4199C421600B7FC8F /* BILibUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BILibUtils.m; path = BlockInjection/BILibUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +150,8 @@
 		C824EFEF1974F1CE0074EC5D /* AdvanceObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				C88877B8199C420A00B7FC8F /* BlockInjection */,
+				C88877B4199C41A600B7FC8F /* DLIntrospection */,
 				C80F8FCF197767DD0086C986 /* tableview_header.png */,
 				C824EFF81974F1CE0074EC5D /* AdvanceObjectiveCAppDelegate.h */,
 				C824EFF91974F1CE0074EC5D /* AdvanceObjectiveCAppDelegate.m */,
@@ -177,6 +199,34 @@
 				C824F0111974F1CE0074EC5D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C88877B4199C41A600B7FC8F /* DLIntrospection */ = {
+			isa = PBXGroup;
+			children = (
+				C88877B5199C41B700B7FC8F /* NSObject+DLIntrospection.h */,
+				C88877B6199C41B700B7FC8F /* NSObject+DLIntrospection.m */,
+			);
+			name = DLIntrospection;
+			sourceTree = "<group>";
+		};
+		C88877B8199C420A00B7FC8F /* BlockInjection */ = {
+			isa = PBXGroup;
+			children = (
+				C88877B9199C421600B7FC8F /* BIItem.h */,
+				C88877BA199C421600B7FC8F /* BIItem.m */,
+				C88877BB199C421600B7FC8F /* BIItemManager.h */,
+				C88877BC199C421600B7FC8F /* BIItemManager.m */,
+				C88877BD199C421600B7FC8F /* BILib.h */,
+				C88877BE199C421600B7FC8F /* BILib.m */,
+				C88877BF199C421600B7FC8F /* BILibArg.h */,
+				C88877C0199C421600B7FC8F /* BILibArg.m */,
+				C88877C1199C421600B7FC8F /* BILibDummyStruct.h */,
+				C88877C2199C421600B7FC8F /* BILibExclusives.h */,
+				C88877C3199C421600B7FC8F /* BILibUtils.h */,
+				C88877C4199C421600B7FC8F /* BILibUtils.m */,
+			);
+			name = BlockInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,11 +329,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C824F0001974F1CE0074EC5D /* AdvanceObjectiveCViewController.m in Sources */,
+				C88877C8199C421600B7FC8F /* BILibArg.m in Sources */,
+				C88877B7199C41B700B7FC8F /* NSObject+DLIntrospection.m in Sources */,
 				C81596901976383B004339C3 /* MethodSwizzle.m in Sources */,
+				C88877C5199C421600B7FC8F /* BIItem.m in Sources */,
 				C824EFF61974F1CE0074EC5D /* main.m in Sources */,
+				C88877C6199C421600B7FC8F /* BIItemManager.m in Sources */,
+				C88877C9199C421600B7FC8F /* BILibUtils.m in Sources */,
 				C824EFFA1974F1CE0074EC5D /* AdvanceObjectiveCAppDelegate.m in Sources */,
 				C8159688197624F0004339C3 /* block.c in Sources */,
 				C80F8FD31977CD7A0086C986 /* NSObject+RuntimeProperty.m in Sources */,
+				C88877C7199C421600B7FC8F /* BILib.m in Sources */,
 				C815968F1976383B004339C3 /* JRSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
