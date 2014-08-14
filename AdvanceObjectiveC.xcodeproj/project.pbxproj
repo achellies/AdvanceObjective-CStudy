@@ -55,6 +55,56 @@
 		C888781A199C49C500B7FC8F /* UIViewController+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887803199C49C500B7FC8F /* UIViewController+PromiseKit.m */; };
 		C8887826199C936F00B7FC8F /* OMGHTTPURLRQ.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887823199C936F00B7FC8F /* OMGHTTPURLRQ.m */; };
 		C8887827199C936F00B7FC8F /* OMGUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887825199C936F00B7FC8F /* OMGUserAgent.m */; };
+		C888785C199CA25500B7FC8F /* NSArray+all.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887829199CA25500B7FC8F /* NSArray+all.m */; };
+		C888785D199CA25500B7FC8F /* NSArray+any.m in Sources */ = {isa = PBXBuildFile; fileRef = C888782A199CA25500B7FC8F /* NSArray+any.m */; };
+		C888785E199CA25500B7FC8F /* NSArray+chunk.m in Sources */ = {isa = PBXBuildFile; fileRef = C888782B199CA25500B7FC8F /* NSArray+chunk.m */; };
+		C888785F199CA25500B7FC8F /* NSArray+concat.m in Sources */ = {isa = PBXBuildFile; fileRef = C888782C199CA25500B7FC8F /* NSArray+concat.m */; };
+		C8887860199CA25500B7FC8F /* NSArray+dict.m in Sources */ = {isa = PBXBuildFile; fileRef = C888782D199CA25500B7FC8F /* NSArray+dict.m */; };
+		C8887861199CA25500B7FC8F /* NSArray+each.m in Sources */ = {isa = PBXBuildFile; fileRef = C888782E199CA25500B7FC8F /* NSArray+each.m */; };
+		C8887862199CA25500B7FC8F /* NSArray+find.m in Sources */ = {isa = PBXBuildFile; fileRef = C888782F199CA25500B7FC8F /* NSArray+find.m */; };
+		C8887863199CA25500B7FC8F /* NSArray+first.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887830199CA25500B7FC8F /* NSArray+first.m */; };
+		C8887864199CA25500B7FC8F /* NSArray+flatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887831199CA25500B7FC8F /* NSArray+flatMap.m */; };
+		C8887865199CA25500B7FC8F /* NSArray+flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887832199CA25500B7FC8F /* NSArray+flatten.m */; };
+		C8887866199CA25500B7FC8F /* NSArray+groupBy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887833199CA25500B7FC8F /* NSArray+groupBy.m */; };
+		C8887867199CA25500B7FC8F /* NSArray+has.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887834199CA25500B7FC8F /* NSArray+has.m */; };
+		C8887868199CA25500B7FC8F /* NSArray+indexOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887835199CA25500B7FC8F /* NSArray+indexOf.m */; };
+		C8887869199CA25500B7FC8F /* NSArray+inject.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887836199CA25500B7FC8F /* NSArray+inject.m */; };
+		C888786A199CA25500B7FC8F /* NSArray+join.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887837199CA25500B7FC8F /* NSArray+join.m */; };
+		C888786B199CA25500B7FC8F /* NSArray+last.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887838199CA25500B7FC8F /* NSArray+last.m */; };
+		C888786C199CA25500B7FC8F /* NSArray+map.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887839199CA25500B7FC8F /* NSArray+map.m */; };
+		C888786D199CA25500B7FC8F /* NSArray+max.m in Sources */ = {isa = PBXBuildFile; fileRef = C888783A199CA25500B7FC8F /* NSArray+max.m */; };
+		C888786E199CA25500B7FC8F /* NSArray+min.m in Sources */ = {isa = PBXBuildFile; fileRef = C888783B199CA25500B7FC8F /* NSArray+min.m */; };
+		C888786F199CA25500B7FC8F /* NSArray+none.m in Sources */ = {isa = PBXBuildFile; fileRef = C888783C199CA25500B7FC8F /* NSArray+none.m */; };
+		C8887870199CA25500B7FC8F /* NSArray+partition.m in Sources */ = {isa = PBXBuildFile; fileRef = C888783D199CA25500B7FC8F /* NSArray+partition.m */; };
+		C8887871199CA25500B7FC8F /* NSArray+pluck.m in Sources */ = {isa = PBXBuildFile; fileRef = C888783E199CA25500B7FC8F /* NSArray+pluck.m */; };
+		C8887872199CA25500B7FC8F /* NSArray+pmap.m in Sources */ = {isa = PBXBuildFile; fileRef = C888783F199CA25500B7FC8F /* NSArray+pmap.m */; };
+		C8887873199CA25500B7FC8F /* NSArray+reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887840199CA25500B7FC8F /* NSArray+reduce.m */; };
+		C8887874199CA25500B7FC8F /* NSArray+reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887841199CA25500B7FC8F /* NSArray+reverse.m */; };
+		C8887875199CA25500B7FC8F /* NSArray+rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887842199CA25500B7FC8F /* NSArray+rotate.m */; };
+		C8887876199CA25500B7FC8F /* NSArray+sample.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887843199CA25500B7FC8F /* NSArray+sample.m */; };
+		C8887877199CA25500B7FC8F /* NSArray+select.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887844199CA25500B7FC8F /* NSArray+select.m */; };
+		C8887878199CA25500B7FC8F /* NSArray+shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887845199CA25500B7FC8F /* NSArray+shuffle.m */; };
+		C8887879199CA25500B7FC8F /* NSArray+skip.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887846199CA25500B7FC8F /* NSArray+skip.m */; };
+		C888787A199CA25500B7FC8F /* NSArray+slice.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887847199CA25500B7FC8F /* NSArray+slice.m */; };
+		C888787B199CA25500B7FC8F /* NSArray+snip.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887848199CA25500B7FC8F /* NSArray+snip.m */; };
+		C888787C199CA25500B7FC8F /* NSArray+sort.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887849199CA25500B7FC8F /* NSArray+sort.m */; };
+		C888787D199CA25500B7FC8F /* NSArray+transpose.m in Sources */ = {isa = PBXBuildFile; fileRef = C888784A199CA25500B7FC8F /* NSArray+transpose.m */; };
+		C888787E199CA25500B7FC8F /* NSArray+uniq.m in Sources */ = {isa = PBXBuildFile; fileRef = C888784B199CA25500B7FC8F /* NSArray+uniq.m */; };
+		C888787F199CA25500B7FC8F /* NSArray+without.m in Sources */ = {isa = PBXBuildFile; fileRef = C888784C199CA25500B7FC8F /* NSArray+without.m */; };
+		C8887880199CA25500B7FC8F /* NSDictionary+array.m in Sources */ = {isa = PBXBuildFile; fileRef = C888784D199CA25500B7FC8F /* NSDictionary+array.m */; };
+		C8887881199CA25500B7FC8F /* NSDictionary+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C888784E199CA25500B7FC8F /* NSDictionary+extend.m */; };
+		C8887882199CA25500B7FC8F /* NSDictionary+get.m in Sources */ = {isa = PBXBuildFile; fileRef = C888784F199CA25500B7FC8F /* NSDictionary+get.m */; };
+		C8887883199CA25500B7FC8F /* NSDictionary+map.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887850199CA25500B7FC8F /* NSDictionary+map.m */; };
+		C8887884199CA25500B7FC8F /* NSDictionary+pick.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887851199CA25500B7FC8F /* NSDictionary+pick.m */; };
+		C8887885199CA25500B7FC8F /* NSMutableArray+pop.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887852199CA25500B7FC8F /* NSMutableArray+pop.m */; };
+		C8887886199CA25500B7FC8F /* NSMutableArray+push.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887853199CA25500B7FC8F /* NSMutableArray+push.m */; };
+		C8887887199CA25500B7FC8F /* NSMutableArray+shift.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887854199CA25500B7FC8F /* NSMutableArray+shift.m */; };
+		C8887888199CA25500B7FC8F /* NSMutableArray+unshift.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887855199CA25500B7FC8F /* NSMutableArray+unshift.m */; };
+		C8887889199CA25500B7FC8F /* NSNumber+upTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887856199CA25500B7FC8F /* NSNumber+upTo.m */; };
+		C888788A199CA25500B7FC8F /* NSSet+each.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887857199CA25500B7FC8F /* NSSet+each.m */; };
+		C888788B199CA25500B7FC8F /* NSString+split.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887858199CA25500B7FC8F /* NSString+split.m */; };
+		C888788C199CA25500B7FC8F /* YOLO.m in Sources */ = {isa = PBXBuildFile; fileRef = C888785B199CA25500B7FC8F /* YOLO.m */; };
+		C888788E199CA28000B7FC8F /* YOLO.ph in Resources */ = {isa = PBXBuildFile; fileRef = C888788D199CA28000B7FC8F /* YOLO.ph */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +220,58 @@
 		C8887823199C936F00B7FC8F /* OMGHTTPURLRQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OMGHTTPURLRQ.m; path = PromiseKit/OMGHTTPURLRQ.m; sourceTree = "<group>"; };
 		C8887824199C936F00B7FC8F /* OMGUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OMGUserAgent.h; path = PromiseKit/OMGUserAgent.h; sourceTree = "<group>"; };
 		C8887825199C936F00B7FC8F /* OMGUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OMGUserAgent.m; path = PromiseKit/OMGUserAgent.m; sourceTree = "<group>"; };
+		C8887829199CA25500B7FC8F /* NSArray+all.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+all.m"; path = "YOLOKit/NSArray+all.m"; sourceTree = "<group>"; };
+		C888782A199CA25500B7FC8F /* NSArray+any.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+any.m"; path = "YOLOKit/NSArray+any.m"; sourceTree = "<group>"; };
+		C888782B199CA25500B7FC8F /* NSArray+chunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+chunk.m"; path = "YOLOKit/NSArray+chunk.m"; sourceTree = "<group>"; };
+		C888782C199CA25500B7FC8F /* NSArray+concat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+concat.m"; path = "YOLOKit/NSArray+concat.m"; sourceTree = "<group>"; };
+		C888782D199CA25500B7FC8F /* NSArray+dict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+dict.m"; path = "YOLOKit/NSArray+dict.m"; sourceTree = "<group>"; };
+		C888782E199CA25500B7FC8F /* NSArray+each.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+each.m"; path = "YOLOKit/NSArray+each.m"; sourceTree = "<group>"; };
+		C888782F199CA25500B7FC8F /* NSArray+find.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+find.m"; path = "YOLOKit/NSArray+find.m"; sourceTree = "<group>"; };
+		C8887830199CA25500B7FC8F /* NSArray+first.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+first.m"; path = "YOLOKit/NSArray+first.m"; sourceTree = "<group>"; };
+		C8887831199CA25500B7FC8F /* NSArray+flatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+flatMap.m"; path = "YOLOKit/NSArray+flatMap.m"; sourceTree = "<group>"; };
+		C8887832199CA25500B7FC8F /* NSArray+flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+flatten.m"; path = "YOLOKit/NSArray+flatten.m"; sourceTree = "<group>"; };
+		C8887833199CA25500B7FC8F /* NSArray+groupBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+groupBy.m"; path = "YOLOKit/NSArray+groupBy.m"; sourceTree = "<group>"; };
+		C8887834199CA25500B7FC8F /* NSArray+has.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+has.m"; path = "YOLOKit/NSArray+has.m"; sourceTree = "<group>"; };
+		C8887835199CA25500B7FC8F /* NSArray+indexOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+indexOf.m"; path = "YOLOKit/NSArray+indexOf.m"; sourceTree = "<group>"; };
+		C8887836199CA25500B7FC8F /* NSArray+inject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+inject.m"; path = "YOLOKit/NSArray+inject.m"; sourceTree = "<group>"; };
+		C8887837199CA25500B7FC8F /* NSArray+join.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+join.m"; path = "YOLOKit/NSArray+join.m"; sourceTree = "<group>"; };
+		C8887838199CA25500B7FC8F /* NSArray+last.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+last.m"; path = "YOLOKit/NSArray+last.m"; sourceTree = "<group>"; };
+		C8887839199CA25500B7FC8F /* NSArray+map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+map.m"; path = "YOLOKit/NSArray+map.m"; sourceTree = "<group>"; };
+		C888783A199CA25500B7FC8F /* NSArray+max.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+max.m"; path = "YOLOKit/NSArray+max.m"; sourceTree = "<group>"; };
+		C888783B199CA25500B7FC8F /* NSArray+min.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+min.m"; path = "YOLOKit/NSArray+min.m"; sourceTree = "<group>"; };
+		C888783C199CA25500B7FC8F /* NSArray+none.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+none.m"; path = "YOLOKit/NSArray+none.m"; sourceTree = "<group>"; };
+		C888783D199CA25500B7FC8F /* NSArray+partition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+partition.m"; path = "YOLOKit/NSArray+partition.m"; sourceTree = "<group>"; };
+		C888783E199CA25500B7FC8F /* NSArray+pluck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+pluck.m"; path = "YOLOKit/NSArray+pluck.m"; sourceTree = "<group>"; };
+		C888783F199CA25500B7FC8F /* NSArray+pmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+pmap.m"; path = "YOLOKit/NSArray+pmap.m"; sourceTree = "<group>"; };
+		C8887840199CA25500B7FC8F /* NSArray+reduce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+reduce.m"; path = "YOLOKit/NSArray+reduce.m"; sourceTree = "<group>"; };
+		C8887841199CA25500B7FC8F /* NSArray+reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+reverse.m"; path = "YOLOKit/NSArray+reverse.m"; sourceTree = "<group>"; };
+		C8887842199CA25500B7FC8F /* NSArray+rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+rotate.m"; path = "YOLOKit/NSArray+rotate.m"; sourceTree = "<group>"; };
+		C8887843199CA25500B7FC8F /* NSArray+sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+sample.m"; path = "YOLOKit/NSArray+sample.m"; sourceTree = "<group>"; };
+		C8887844199CA25500B7FC8F /* NSArray+select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+select.m"; path = "YOLOKit/NSArray+select.m"; sourceTree = "<group>"; };
+		C8887845199CA25500B7FC8F /* NSArray+shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+shuffle.m"; path = "YOLOKit/NSArray+shuffle.m"; sourceTree = "<group>"; };
+		C8887846199CA25500B7FC8F /* NSArray+skip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+skip.m"; path = "YOLOKit/NSArray+skip.m"; sourceTree = "<group>"; };
+		C8887847199CA25500B7FC8F /* NSArray+slice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+slice.m"; path = "YOLOKit/NSArray+slice.m"; sourceTree = "<group>"; };
+		C8887848199CA25500B7FC8F /* NSArray+snip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+snip.m"; path = "YOLOKit/NSArray+snip.m"; sourceTree = "<group>"; };
+		C8887849199CA25500B7FC8F /* NSArray+sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+sort.m"; path = "YOLOKit/NSArray+sort.m"; sourceTree = "<group>"; };
+		C888784A199CA25500B7FC8F /* NSArray+transpose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+transpose.m"; path = "YOLOKit/NSArray+transpose.m"; sourceTree = "<group>"; };
+		C888784B199CA25500B7FC8F /* NSArray+uniq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+uniq.m"; path = "YOLOKit/NSArray+uniq.m"; sourceTree = "<group>"; };
+		C888784C199CA25500B7FC8F /* NSArray+without.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+without.m"; path = "YOLOKit/NSArray+without.m"; sourceTree = "<group>"; };
+		C888784D199CA25500B7FC8F /* NSDictionary+array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+array.m"; path = "YOLOKit/NSDictionary+array.m"; sourceTree = "<group>"; };
+		C888784E199CA25500B7FC8F /* NSDictionary+extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+extend.m"; path = "YOLOKit/NSDictionary+extend.m"; sourceTree = "<group>"; };
+		C888784F199CA25500B7FC8F /* NSDictionary+get.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+get.m"; path = "YOLOKit/NSDictionary+get.m"; sourceTree = "<group>"; };
+		C8887850199CA25500B7FC8F /* NSDictionary+map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+map.m"; path = "YOLOKit/NSDictionary+map.m"; sourceTree = "<group>"; };
+		C8887851199CA25500B7FC8F /* NSDictionary+pick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+pick.m"; path = "YOLOKit/NSDictionary+pick.m"; sourceTree = "<group>"; };
+		C8887852199CA25500B7FC8F /* NSMutableArray+pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+pop.m"; path = "YOLOKit/NSMutableArray+pop.m"; sourceTree = "<group>"; };
+		C8887853199CA25500B7FC8F /* NSMutableArray+push.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+push.m"; path = "YOLOKit/NSMutableArray+push.m"; sourceTree = "<group>"; };
+		C8887854199CA25500B7FC8F /* NSMutableArray+shift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+shift.m"; path = "YOLOKit/NSMutableArray+shift.m"; sourceTree = "<group>"; };
+		C8887855199CA25500B7FC8F /* NSMutableArray+unshift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+unshift.m"; path = "YOLOKit/NSMutableArray+unshift.m"; sourceTree = "<group>"; };
+		C8887856199CA25500B7FC8F /* NSNumber+upTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+upTo.m"; path = "YOLOKit/NSNumber+upTo.m"; sourceTree = "<group>"; };
+		C8887857199CA25500B7FC8F /* NSSet+each.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+each.m"; path = "YOLOKit/NSSet+each.m"; sourceTree = "<group>"; };
+		C8887858199CA25500B7FC8F /* NSString+split.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+split.m"; path = "YOLOKit/NSString+split.m"; sourceTree = "<group>"; };
+		C8887859199CA25500B7FC8F /* YOLO-all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YOLO-all.h"; path = "YOLOKit/YOLO-all.h"; sourceTree = "<group>"; };
+		C888785A199CA25500B7FC8F /* YOLO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOLO.h; path = YOLOKit/YOLO.h; sourceTree = "<group>"; };
+		C888785B199CA25500B7FC8F /* YOLO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOLO.m; path = YOLOKit/YOLO.m; sourceTree = "<group>"; };
+		C888788D199CA28000B7FC8F /* YOLO.ph */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YOLO.ph; path = YOLOKit/YOLO.ph; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +333,7 @@
 		C824EFEF1974F1CE0074EC5D /* AdvanceObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				C8887828199CA24A00B7FC8F /* YOLOKit */,
 				C88877CA199C49B000B7FC8F /* PromiseKit */,
 				C88877B8199C420A00B7FC8F /* BlockInjection */,
 				C88877B4199C41A600B7FC8F /* DLIntrospection */,
@@ -403,6 +506,65 @@
 			path = PromiseKit/PromiseKit;
 			sourceTree = "<group>";
 		};
+		C8887828199CA24A00B7FC8F /* YOLOKit */ = {
+			isa = PBXGroup;
+			children = (
+				C888788D199CA28000B7FC8F /* YOLO.ph */,
+				C8887859199CA25500B7FC8F /* YOLO-all.h */,
+				C888785A199CA25500B7FC8F /* YOLO.h */,
+				C888785B199CA25500B7FC8F /* YOLO.m */,
+				C888782F199CA25500B7FC8F /* NSArray+find.m */,
+				C8887830199CA25500B7FC8F /* NSArray+first.m */,
+				C8887829199CA25500B7FC8F /* NSArray+all.m */,
+				C888782A199CA25500B7FC8F /* NSArray+any.m */,
+				C888782B199CA25500B7FC8F /* NSArray+chunk.m */,
+				C888782C199CA25500B7FC8F /* NSArray+concat.m */,
+				C888782D199CA25500B7FC8F /* NSArray+dict.m */,
+				C888782E199CA25500B7FC8F /* NSArray+each.m */,
+				C8887831199CA25500B7FC8F /* NSArray+flatMap.m */,
+				C8887832199CA25500B7FC8F /* NSArray+flatten.m */,
+				C8887833199CA25500B7FC8F /* NSArray+groupBy.m */,
+				C8887834199CA25500B7FC8F /* NSArray+has.m */,
+				C8887835199CA25500B7FC8F /* NSArray+indexOf.m */,
+				C8887836199CA25500B7FC8F /* NSArray+inject.m */,
+				C8887837199CA25500B7FC8F /* NSArray+join.m */,
+				C8887838199CA25500B7FC8F /* NSArray+last.m */,
+				C8887839199CA25500B7FC8F /* NSArray+map.m */,
+				C888783A199CA25500B7FC8F /* NSArray+max.m */,
+				C888783B199CA25500B7FC8F /* NSArray+min.m */,
+				C888783C199CA25500B7FC8F /* NSArray+none.m */,
+				C888783D199CA25500B7FC8F /* NSArray+partition.m */,
+				C888783E199CA25500B7FC8F /* NSArray+pluck.m */,
+				C888783F199CA25500B7FC8F /* NSArray+pmap.m */,
+				C8887840199CA25500B7FC8F /* NSArray+reduce.m */,
+				C8887841199CA25500B7FC8F /* NSArray+reverse.m */,
+				C8887842199CA25500B7FC8F /* NSArray+rotate.m */,
+				C8887843199CA25500B7FC8F /* NSArray+sample.m */,
+				C8887844199CA25500B7FC8F /* NSArray+select.m */,
+				C8887845199CA25500B7FC8F /* NSArray+shuffle.m */,
+				C8887846199CA25500B7FC8F /* NSArray+skip.m */,
+				C8887847199CA25500B7FC8F /* NSArray+slice.m */,
+				C8887848199CA25500B7FC8F /* NSArray+snip.m */,
+				C8887849199CA25500B7FC8F /* NSArray+sort.m */,
+				C888784A199CA25500B7FC8F /* NSArray+transpose.m */,
+				C888784B199CA25500B7FC8F /* NSArray+uniq.m */,
+				C888784C199CA25500B7FC8F /* NSArray+without.m */,
+				C888784D199CA25500B7FC8F /* NSDictionary+array.m */,
+				C888784E199CA25500B7FC8F /* NSDictionary+extend.m */,
+				C888784F199CA25500B7FC8F /* NSDictionary+get.m */,
+				C8887850199CA25500B7FC8F /* NSDictionary+map.m */,
+				C8887851199CA25500B7FC8F /* NSDictionary+pick.m */,
+				C8887852199CA25500B7FC8F /* NSMutableArray+pop.m */,
+				C8887853199CA25500B7FC8F /* NSMutableArray+push.m */,
+				C8887854199CA25500B7FC8F /* NSMutableArray+shift.m */,
+				C8887855199CA25500B7FC8F /* NSMutableArray+unshift.m */,
+				C8887856199CA25500B7FC8F /* NSNumber+upTo.m */,
+				C8887857199CA25500B7FC8F /* NSSet+each.m */,
+				C8887858199CA25500B7FC8F /* NSString+split.m */,
+			);
+			name = YOLOKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +645,7 @@
 				C8887816199C49C500B7FC8F /* tests in Resources */,
 				C8887813199C49C500B7FC8F /* xctest.rb in Resources */,
 				C824F0021974F1CE0074EC5D /* Images.xcassets in Resources */,
+				C888788E199CA28000B7FC8F /* YOLO.ph in Resources */,
 				C824EFF41974F1CE0074EC5D /* InfoPlist.strings in Resources */,
 				C80F8FD0197767DD0086C986 /* tableview_header.png in Resources */,
 				C824EFFD1974F1CE0074EC5D /* Main.storyboard in Resources */,
@@ -505,39 +668,88 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8887804199C49C500B7FC8F /* ACAccountStore+PromiseKit.m in Sources */,
+				C888787A199CA25500B7FC8F /* NSArray+slice.m in Sources */,
+				C8887863199CA25500B7FC8F /* NSArray+first.m in Sources */,
+				C8887881199CA25500B7FC8F /* NSDictionary+extend.m in Sources */,
+				C888786E199CA25500B7FC8F /* NSArray+min.m in Sources */,
 				C824F0001974F1CE0074EC5D /* AdvanceObjectiveCViewController.m in Sources */,
 				C88877C8199C421600B7FC8F /* BILibArg.m in Sources */,
+				C888787E199CA25500B7FC8F /* NSArray+uniq.m in Sources */,
+				C888785D199CA25500B7FC8F /* NSArray+any.m in Sources */,
 				C8887805199C49C500B7FC8F /* AVAudioSession+PromiseKit.m in Sources */,
+				C8887870199CA25500B7FC8F /* NSArray+partition.m in Sources */,
+				C8887876199CA25500B7FC8F /* NSArray+sample.m in Sources */,
+				C888787C199CA25500B7FC8F /* NSArray+sort.m in Sources */,
+				C888788A199CA25500B7FC8F /* NSSet+each.m in Sources */,
+				C8887873199CA25500B7FC8F /* NSArray+reduce.m in Sources */,
 				C888780D199C49C500B7FC8F /* NSURLConnection+PromiseKit.m in Sources */,
+				C888786A199CA25500B7FC8F /* NSArray+join.m in Sources */,
+				C8887877199CA25500B7FC8F /* NSArray+select.m in Sources */,
+				C8887888199CA25500B7FC8F /* NSMutableArray+unshift.m in Sources */,
 				C88877B7199C41B700B7FC8F /* NSObject+DLIntrospection.m in Sources */,
 				C81596901976383B004339C3 /* MethodSwizzle.m in Sources */,
 				C8887812199C49C500B7FC8F /* NSMethodSignatureForBlock.m in Sources */,
 				C88877C5199C421600B7FC8F /* BIItem.m in Sources */,
+				C8887867199CA25500B7FC8F /* NSArray+has.m in Sources */,
 				C8887811199C49C500B7FC8F /* PMKPromise+When.m in Sources */,
+				C8887860199CA25500B7FC8F /* NSArray+dict.m in Sources */,
 				C824EFF61974F1CE0074EC5D /* main.m in Sources */,
+				C8887864199CA25500B7FC8F /* NSArray+flatMap.m in Sources */,
+				C8887878199CA25500B7FC8F /* NSArray+shuffle.m in Sources */,
+				C8887887199CA25500B7FC8F /* NSMutableArray+shift.m in Sources */,
 				C88877C6199C421600B7FC8F /* BIItemManager.m in Sources */,
+				C8887871199CA25500B7FC8F /* NSArray+pluck.m in Sources */,
 				C8887819199C49C500B7FC8F /* UIView+PromiseKit.m in Sources */,
 				C888780C199C49C500B7FC8F /* NSNotificationCenter+PromiseKit.m in Sources */,
+				C888787F199CA25500B7FC8F /* NSArray+without.m in Sources */,
+				C8887884199CA25500B7FC8F /* NSDictionary+pick.m in Sources */,
+				C8887869199CA25500B7FC8F /* NSArray+inject.m in Sources */,
 				C8887826199C936F00B7FC8F /* OMGHTTPURLRQ.m in Sources */,
 				C88877C9199C421600B7FC8F /* BILibUtils.m in Sources */,
+				C8887868199CA25500B7FC8F /* NSArray+indexOf.m in Sources */,
+				C888787D199CA25500B7FC8F /* NSArray+transpose.m in Sources */,
+				C888785E199CA25500B7FC8F /* NSArray+chunk.m in Sources */,
+				C888786F199CA25500B7FC8F /* NSArray+none.m in Sources */,
+				C888786D199CA25500B7FC8F /* NSArray+max.m in Sources */,
+				C888787B199CA25500B7FC8F /* NSArray+snip.m in Sources */,
 				C888780B199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m in Sources */,
+				C8887886199CA25500B7FC8F /* NSMutableArray+push.m in Sources */,
 				C888780F199C49C500B7FC8F /* PMKPromise+Pause.m in Sources */,
+				C8887882199CA25500B7FC8F /* NSDictionary+get.m in Sources */,
+				C8887861199CA25500B7FC8F /* NSArray+each.m in Sources */,
+				C8887866199CA25500B7FC8F /* NSArray+groupBy.m in Sources */,
+				C8887880199CA25500B7FC8F /* NSDictionary+array.m in Sources */,
 				C824EFFA1974F1CE0074EC5D /* AdvanceObjectiveCAppDelegate.m in Sources */,
 				C8887815199C49C500B7FC8F /* SLRequest+PromiseKit.m in Sources */,
 				C8159688197624F0004339C3 /* block.c in Sources */,
+				C888785C199CA25500B7FC8F /* NSArray+all.m in Sources */,
+				C8887862199CA25500B7FC8F /* NSArray+find.m in Sources */,
+				C888788B199CA25500B7FC8F /* NSString+split.m in Sources */,
+				C8887879199CA25500B7FC8F /* NSArray+skip.m in Sources */,
 				C888780A199C49C500B7FC8F /* MKDirections+PromiseKit.m in Sources */,
 				C8887818199C49C500B7FC8F /* UIAlertView+PromiseKit.m in Sources */,
 				C80F8FD31977CD7A0086C986 /* NSObject+RuntimeProperty.m in Sources */,
 				C8887827199C936F00B7FC8F /* OMGUserAgent.m in Sources */,
+				C8887865199CA25500B7FC8F /* NSArray+flatten.m in Sources */,
 				C8887809199C49C500B7FC8F /* CLLocationManager+PromiseKit.m in Sources */,
 				C88877C7199C421600B7FC8F /* BILib.m in Sources */,
+				C8887874199CA25500B7FC8F /* NSArray+reverse.m in Sources */,
 				C888781A199C49C500B7FC8F /* UIViewController+PromiseKit.m in Sources */,
 				C8887814199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m in Sources */,
+				C8887883199CA25500B7FC8F /* NSDictionary+map.m in Sources */,
 				C815968F1976383B004339C3 /* JRSwizzle.m in Sources */,
 				C8887810199C49C500B7FC8F /* PMKPromise+Until.m in Sources */,
+				C888786C199CA25500B7FC8F /* NSArray+map.m in Sources */,
+				C8887889199CA25500B7FC8F /* NSNumber+upTo.m in Sources */,
+				C8887875199CA25500B7FC8F /* NSArray+rotate.m in Sources */,
+				C888788C199CA25500B7FC8F /* YOLO.m in Sources */,
+				C888785F199CA25500B7FC8F /* NSArray+concat.m in Sources */,
+				C888786B199CA25500B7FC8F /* NSArray+last.m in Sources */,
 				C8887817199C49C500B7FC8F /* UIActionSheet+PromiseKit.m in Sources */,
+				C8887872199CA25500B7FC8F /* NSArray+pmap.m in Sources */,
 				C888780E199C49C500B7FC8F /* PMKPromise.m in Sources */,
 				C8887808199C49C500B7FC8F /* CLGeocoder+PromiseKit.m in Sources */,
+				C8887885199CA25500B7FC8F /* NSMutableArray+pop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
