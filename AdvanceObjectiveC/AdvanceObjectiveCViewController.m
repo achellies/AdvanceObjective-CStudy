@@ -821,19 +821,19 @@ NSString * runCommand(NSString* c) {
 
 #pragma mark - PromiseKit
 -(void)testPromiseKit {
-//    [NSURLConnection GET:@"http://promisekit.org/public/img/header.png"].then(^(UIImage *image) {
-//        self.imageView.image = image;
-//    }).then(^() {
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:@"图片加载成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-//        [alert show];
-//        [alert promise].then(^{
-//        });
-//    }).catch(^(NSError *error){
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-//        [alert show];
-//        [alert promise].then(^{
-//        });
-//    });
+    [NSURLConnection GET:@"http://promisekit.org/public/img/header.png"].then(^(UIImage *image) {
+        self.imageView.image = image;
+    }).then(^() {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:@"图片加载成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        [alert promise].then(^{
+        });
+    }).catch(^(NSError *error){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        [alert promise].then(^{
+        });
+    });
 
     PMKPromise *promise1 = [NSURLConnection GET:@"http://promisekit.org/public/img/header.png"];
     PMKPromise *promise2 = [UIView promiseWithDuration:0.3 animations:^{
@@ -843,6 +843,7 @@ NSString * runCommand(NSString* c) {
     [PMKPromise when:@[promise1, promise2]].then(^(NSArray *results){
         UIImage *kittenImage = results[0];
         NSNumber *animationCompleted = results[1];
+        printf("");
     }).then(^() {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:@"图片加载成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
