@@ -105,6 +105,16 @@
 		C888788B199CA25500B7FC8F /* NSString+split.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887858199CA25500B7FC8F /* NSString+split.m */; };
 		C888788C199CA25500B7FC8F /* YOLO.m in Sources */ = {isa = PBXBuildFile; fileRef = C888785B199CA25500B7FC8F /* YOLO.m */; };
 		C888788E199CA28000B7FC8F /* YOLO.ph in Resources */ = {isa = PBXBuildFile; fileRef = C888788D199CA28000B7FC8F /* YOLO.ph */; };
+		C88878A8199CB9E300B7FC8F /* FEDMultiProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8887892199CB9E300B7FC8F /* FEDMultiProxy.mm */; };
+		C88878A9199CB9E300B7FC8F /* FEDProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8887894199CB9E300B7FC8F /* FEDProxy.mm */; };
+		C88878AA199CB9E300B7FC8F /* FEDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = C8887896199CB9E300B7FC8F /* FEDRuntime.m */; };
+		C88878AB199CB9E300B7FC8F /* MARTNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C888789A199CB9E300B7FC8F /* MARTNSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88878AC199CB9E300B7FC8F /* RTIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = C888789C199CB9E300B7FC8F /* RTIvar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88878AD199CB9E300B7FC8F /* RTMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C888789E199CB9E300B7FC8F /* RTMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88878AE199CB9E300B7FC8F /* RTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C88878A0199CB9E300B7FC8F /* RTProperty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88878AF199CB9E300B7FC8F /* RTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C88878A2199CB9E300B7FC8F /* RTProtocol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88878B0199CB9E300B7FC8F /* RTUnregisteredClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C88878A4199CB9E300B7FC8F /* RTUnregisteredClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88878B1199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C88878A7199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +282,27 @@
 		C888785A199CA25500B7FC8F /* YOLO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOLO.h; path = YOLOKit/YOLO.h; sourceTree = "<group>"; };
 		C888785B199CA25500B7FC8F /* YOLO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOLO.m; path = YOLOKit/YOLO.m; sourceTree = "<group>"; };
 		C888788D199CA28000B7FC8F /* YOLO.ph */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YOLO.ph; path = YOLOKit/YOLO.ph; sourceTree = "<group>"; };
+		C8887891199CB9E300B7FC8F /* FEDMultiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEDMultiProxy.h; sourceTree = "<group>"; };
+		C8887892199CB9E300B7FC8F /* FEDMultiProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FEDMultiProxy.mm; sourceTree = "<group>"; };
+		C8887893199CB9E300B7FC8F /* FEDProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEDProxy.h; sourceTree = "<group>"; };
+		C8887894199CB9E300B7FC8F /* FEDProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FEDProxy.mm; sourceTree = "<group>"; };
+		C8887895199CB9E300B7FC8F /* FEDRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEDRuntime.h; sourceTree = "<group>"; };
+		C8887896199CB9E300B7FC8F /* FEDRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEDRuntime.m; sourceTree = "<group>"; };
+		C8887897199CB9E300B7FC8F /* FEDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEDelegation.h; path = MultiProxy/FEDelegation.h; sourceTree = "<group>"; };
+		C8887899199CB9E300B7FC8F /* MARTNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARTNSObject.h; sourceTree = "<group>"; };
+		C888789A199CB9E300B7FC8F /* MARTNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARTNSObject.m; sourceTree = "<group>"; };
+		C888789B199CB9E300B7FC8F /* RTIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTIvar.h; sourceTree = "<group>"; };
+		C888789C199CB9E300B7FC8F /* RTIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTIvar.m; sourceTree = "<group>"; };
+		C888789D199CB9E300B7FC8F /* RTMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMethod.h; sourceTree = "<group>"; };
+		C888789E199CB9E300B7FC8F /* RTMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMethod.m; sourceTree = "<group>"; };
+		C888789F199CB9E300B7FC8F /* RTProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTProperty.h; sourceTree = "<group>"; };
+		C88878A0199CB9E300B7FC8F /* RTProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTProperty.m; sourceTree = "<group>"; };
+		C88878A1199CB9E300B7FC8F /* RTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTProtocol.h; sourceTree = "<group>"; };
+		C88878A2199CB9E300B7FC8F /* RTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTProtocol.m; sourceTree = "<group>"; };
+		C88878A3199CB9E300B7FC8F /* RTUnregisteredClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUnregisteredClass.h; sourceTree = "<group>"; };
+		C88878A4199CB9E300B7FC8F /* RTUnregisteredClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUnregisteredClass.m; sourceTree = "<group>"; };
+		C88878A6199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAObjCRuntime+FEDAdditions.h"; sourceTree = "<group>"; };
+		C88878A7199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAObjCRuntime+FEDAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +364,7 @@
 		C824EFEF1974F1CE0074EC5D /* AdvanceObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				C888788F199CB9CF00B7FC8F /* MultiProxy */,
 				C8887828199CA24A00B7FC8F /* YOLOKit */,
 				C88877CA199C49B000B7FC8F /* PromiseKit */,
 				C88877B8199C420A00B7FC8F /* BlockInjection */,
@@ -565,6 +597,61 @@
 			name = YOLOKit;
 			sourceTree = "<group>";
 		};
+		C888788F199CB9CF00B7FC8F /* MultiProxy */ = {
+			isa = PBXGroup;
+			children = (
+				C8887890199CB9E300B7FC8F /* ARC */,
+				C8887897199CB9E300B7FC8F /* FEDelegation.h */,
+				C8887898199CB9E300B7FC8F /* MAObjCRuntime */,
+				C88878A5199CB9E300B7FC8F /* nonARC */,
+			);
+			name = MultiProxy;
+			sourceTree = "<group>";
+		};
+		C8887890199CB9E300B7FC8F /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				C8887891199CB9E300B7FC8F /* FEDMultiProxy.h */,
+				C8887892199CB9E300B7FC8F /* FEDMultiProxy.mm */,
+				C8887893199CB9E300B7FC8F /* FEDProxy.h */,
+				C8887894199CB9E300B7FC8F /* FEDProxy.mm */,
+				C8887895199CB9E300B7FC8F /* FEDRuntime.h */,
+				C8887896199CB9E300B7FC8F /* FEDRuntime.m */,
+			);
+			name = ARC;
+			path = MultiProxy/ARC;
+			sourceTree = "<group>";
+		};
+		C8887898199CB9E300B7FC8F /* MAObjCRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				C8887899199CB9E300B7FC8F /* MARTNSObject.h */,
+				C888789A199CB9E300B7FC8F /* MARTNSObject.m */,
+				C888789B199CB9E300B7FC8F /* RTIvar.h */,
+				C888789C199CB9E300B7FC8F /* RTIvar.m */,
+				C888789D199CB9E300B7FC8F /* RTMethod.h */,
+				C888789E199CB9E300B7FC8F /* RTMethod.m */,
+				C888789F199CB9E300B7FC8F /* RTProperty.h */,
+				C88878A0199CB9E300B7FC8F /* RTProperty.m */,
+				C88878A1199CB9E300B7FC8F /* RTProtocol.h */,
+				C88878A2199CB9E300B7FC8F /* RTProtocol.m */,
+				C88878A3199CB9E300B7FC8F /* RTUnregisteredClass.h */,
+				C88878A4199CB9E300B7FC8F /* RTUnregisteredClass.m */,
+			);
+			name = MAObjCRuntime;
+			path = MultiProxy/MAObjCRuntime;
+			sourceTree = "<group>";
+		};
+		C88878A5199CB9E300B7FC8F /* nonARC */ = {
+			isa = PBXGroup;
+			children = (
+				C88878A6199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.h */,
+				C88878A7199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.m */,
+			);
+			name = nonARC;
+			path = MultiProxy/nonARC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -667,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88878AE199CB9E300B7FC8F /* RTProperty.m in Sources */,
 				C8887804199C49C500B7FC8F /* ACAccountStore+PromiseKit.m in Sources */,
 				C888787A199CA25500B7FC8F /* NSArray+slice.m in Sources */,
 				C8887863199CA25500B7FC8F /* NSArray+first.m in Sources */,
@@ -689,14 +777,18 @@
 				C88877B7199C41B700B7FC8F /* NSObject+DLIntrospection.m in Sources */,
 				C81596901976383B004339C3 /* MethodSwizzle.m in Sources */,
 				C8887812199C49C500B7FC8F /* NSMethodSignatureForBlock.m in Sources */,
+				C88878B1199CB9E300B7FC8F /* MAObjCRuntime+FEDAdditions.m in Sources */,
 				C88877C5199C421600B7FC8F /* BIItem.m in Sources */,
 				C8887867199CA25500B7FC8F /* NSArray+has.m in Sources */,
+				C88878AA199CB9E300B7FC8F /* FEDRuntime.m in Sources */,
 				C8887811199C49C500B7FC8F /* PMKPromise+When.m in Sources */,
 				C8887860199CA25500B7FC8F /* NSArray+dict.m in Sources */,
+				C88878AB199CB9E300B7FC8F /* MARTNSObject.m in Sources */,
 				C824EFF61974F1CE0074EC5D /* main.m in Sources */,
 				C8887864199CA25500B7FC8F /* NSArray+flatMap.m in Sources */,
 				C8887878199CA25500B7FC8F /* NSArray+shuffle.m in Sources */,
 				C8887887199CA25500B7FC8F /* NSMutableArray+shift.m in Sources */,
+				C88878B0199CB9E300B7FC8F /* RTUnregisteredClass.m in Sources */,
 				C88877C6199C421600B7FC8F /* BIItemManager.m in Sources */,
 				C8887871199CA25500B7FC8F /* NSArray+pluck.m in Sources */,
 				C8887819199C49C500B7FC8F /* UIView+PromiseKit.m in Sources */,
@@ -710,13 +802,16 @@
 				C888787D199CA25500B7FC8F /* NSArray+transpose.m in Sources */,
 				C888785E199CA25500B7FC8F /* NSArray+chunk.m in Sources */,
 				C888786F199CA25500B7FC8F /* NSArray+none.m in Sources */,
+				C88878AD199CB9E300B7FC8F /* RTMethod.m in Sources */,
 				C888786D199CA25500B7FC8F /* NSArray+max.m in Sources */,
 				C888787B199CA25500B7FC8F /* NSArray+snip.m in Sources */,
 				C888780B199C49C500B7FC8F /* MKMapSnapshotter+PromiseKit.m in Sources */,
+				C88878A9199CB9E300B7FC8F /* FEDProxy.mm in Sources */,
 				C8887886199CA25500B7FC8F /* NSMutableArray+push.m in Sources */,
 				C888780F199C49C500B7FC8F /* PMKPromise+Pause.m in Sources */,
 				C8887882199CA25500B7FC8F /* NSDictionary+get.m in Sources */,
 				C8887861199CA25500B7FC8F /* NSArray+each.m in Sources */,
+				C88878AF199CB9E300B7FC8F /* RTProtocol.m in Sources */,
 				C8887866199CA25500B7FC8F /* NSArray+groupBy.m in Sources */,
 				C8887880199CA25500B7FC8F /* NSDictionary+array.m in Sources */,
 				C824EFFA1974F1CE0074EC5D /* AdvanceObjectiveCAppDelegate.m in Sources */,
@@ -735,6 +830,7 @@
 				C88877C7199C421600B7FC8F /* BILib.m in Sources */,
 				C8887874199CA25500B7FC8F /* NSArray+reverse.m in Sources */,
 				C888781A199C49C500B7FC8F /* UIViewController+PromiseKit.m in Sources */,
+				C88878A8199CB9E300B7FC8F /* FEDMultiProxy.mm in Sources */,
 				C8887814199C49C500B7FC8F /* SKProductsRequest+PromiseKit.m in Sources */,
 				C8887883199CA25500B7FC8F /* NSDictionary+map.m in Sources */,
 				C815968F1976383B004339C3 /* JRSwizzle.m in Sources */,
@@ -746,6 +842,7 @@
 				C888785F199CA25500B7FC8F /* NSArray+concat.m in Sources */,
 				C888786B199CA25500B7FC8F /* NSArray+last.m in Sources */,
 				C8887817199C49C500B7FC8F /* UIActionSheet+PromiseKit.m in Sources */,
+				C88878AC199CB9E300B7FC8F /* RTIvar.m in Sources */,
 				C8887872199CA25500B7FC8F /* NSArray+pmap.m in Sources */,
 				C888780E199C49C500B7FC8F /* PMKPromise.m in Sources */,
 				C8887808199C49C500B7FC8F /* CLGeocoder+PromiseKit.m in Sources */,
