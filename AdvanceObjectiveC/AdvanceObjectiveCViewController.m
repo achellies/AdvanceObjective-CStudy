@@ -164,7 +164,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    topics = @[ @"selector", @"objc_sendMsg", @"_cmd", @"imp", @"NSUncaughtExceptionHandler", @"block", @"kvo", @"shallow copy/deap copy",  @"swizzling", @"dynamic create protocol & class", @"dynamic method resolution", @"dynamic loading", @"message forwarding", @"keep unrecognized selector crash", @"类簇"];
+    topics = @[ @"selector", @"objc_sendMsg", @"_cmd", @"imp", @"NSUncaughtExceptionHandler", @"block", @"kvo", @"shallow copy/deap copy",  @"swizzling", @"dynamic create protocol & class", @"dynamic method resolution", @"dynamic loading", @"message forwarding", @"keep unrecognized selector crash", @"类簇", @"run command"];
 
     UIImage *image = [UIImage imageNamed:@"tableview_header.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -242,6 +242,8 @@ void uncaughtExceptionHandler(NSException *exception) {
         [self showUnImplemetionDialog];
     } else if ([cell.textLabel.text isEqualToString:@"keep unrecognized selector crash"]) {
         [self testUnrecognizedSelector];
+    } else if ([cell.textLabel.text isEqualToString:@"run command"]) {
+        [self testRunCommand];
     }
 }
 
@@ -542,8 +544,30 @@ void uncaughtExceptionHandler(NSException *exception) {
                                   [NSKeyedArchiver archivedDataWithRootObject: array3]];
 }
 
-#pragma mark - Exchange Implemention
+#pragma mark 
+#pragma mark - Run Command
+NSString * runCommand(NSString* c) {
 
+    NSString* outP; FILE *read_fp;  char buffer[BUFSIZ + 1];
+    int chars_read; memset(buffer, '\0', sizeof(buffer));
+    read_fp = popen(c.UTF8String, "r");
+    if (read_fp != NULL) {
+        chars_read = fread(buffer, sizeof(char), BUFSIZ, read_fp);
+        if (chars_read > 0) outP = [NSString stringWithUTF8String:buffer];
+        pclose(read_fp);
+    }
+    return outP;
+}
+
+-(void)testRunCommand {
+    NSString *temp = runCommand(@"ls -la /");
+    printf([temp UTF8String]);
+
+    temp = runCommand(@"pwd");
+    printf([temp UTF8String]);
+}
+
+#pragma mark - Exchange Implemention
 -(void) testSwizzling {
     // https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html#jumpTo_5
     // https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100
@@ -558,6 +582,10 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     Method m1 = class_getInstanceMethod([swizzle class], @selector(instanceMethodA:));
     Method m2 = class_getInstanceMethod([swizzle class], @selector(instanceMethodB:));
+
+    IMP m1Imp = method_getImplementation(m1);
+    struct objc_method_description* description = method_getDescription(m1);
+
     method_exchangeImplementations(m1, m2);
     
     Method m3 = class_getClassMethod([swizzle class], @selector(classMethodA:));

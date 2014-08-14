@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EEC6D2C9-4A73-4C87-8A9A-56156D97BA10</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AdvanceObjectiveC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1905AACF-A02F-44C8-A2EA-7441521B2339</key>
+		<string>https://github.com/achellies/AdvanceObjective-CStudy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AdvanceObjectiveC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1905AACF-A02F-44C8-A2EA-7441521B2339</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/achellies/AdvanceObjective-CStudy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1905AACF-A02F-44C8-A2EA-7441521B2339</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1905AACF-A02F-44C8-A2EA-7441521B2339</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AdvanceObjective-CStudy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
