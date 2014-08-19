@@ -296,8 +296,8 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 #pragma mark - Private Instance Methods
--(id)emptyMethod {
-    printf("protocolInstanceMethod, class = %s, method = %s.\n", class_getName([self class]), sel_getName(_cmd));
+-(id)emptyMethod:(SEL) sel {
+    printf("protocolInstanceMethod, class = %s, method = %s.\n", class_getName([self class]), sel_getName(sel));
     return nil;
 }
 
@@ -779,7 +779,9 @@ NSString * runCommand(NSString* c) {
     }
 
     if (![self respondsToSelector:anInvocation.selector]) {
-        anInvocation.selector = @selector(emptyMethod);
+        SEL sel = [anInvocation selector];
+        anInvocation.selector = @selector(emptyMethod:);
+        [anInvocation setArgument:&sel atIndex:2];
         [anInvocation invoke];
     }
 }
@@ -802,7 +804,7 @@ NSString * runCommand(NSString* c) {
         signature =  [Swizzle instanceMethodSignatureForSelector:aSelector];
     }
     if (!signature) {
-        signature = [self methodSignatureForSelector:@selector(emptyMethod)];
+        signature = [self methodSignatureForSelector:@selector(emptyMethod:)];
     }
     return signature;
 }
