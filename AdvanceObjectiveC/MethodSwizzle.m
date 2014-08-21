@@ -29,8 +29,7 @@
 #import "MethodSwizzle.h"
 #import <stdlib.h>
 #import <string.h>
-#import <objc/objc-runtime.h>
-#import <objc/objc-class.h>
+#import <objc/runtime.h>
 
 #ifndef __OBJC2__
 
