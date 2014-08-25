@@ -166,7 +166,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    topics = @[ @"selector", @"objc_sendMsg", @"_cmd", @"imp", @"NSUncaughtExceptionHandler", @"block", @"kvo", @"shallow copy/deap copy",  @"swizzling", @"dynamic create protocol & class", @"dynamic method resolution", @"dynamic loading", @"message forwarding", @"keep unrecognized selector crash", @"类簇", @"run command", @"promise kit"];
+    topics = @[ @"selector", @"objc_sendMsg", @"_cmd", @"imp", @"NSUncaughtExceptionHandler", @"block", @"kvo", @"shallow copy/deap copy",  @"swizzling", @"dynamic create protocol & class", @"dynamic method resolution", @"dynamic loading", @"message forwarding", @"keep unrecognized selector crash", @"类簇", @"run command", @"promise kit", @"NSValue store any Struct"];
 
     UIImage *image = [UIImage imageNamed:@"tableview_header.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -249,6 +249,8 @@ void uncaughtExceptionHandler(NSException *exception) {
         [self testRunCommand];
     } else if ([cell.textLabel.text isEqualToString:@"promise kit"]) {
         [self testPromiseKit];
+    } else if ([cell.textLabel.text isEqualToString:@"NSValue store any Struct"]) {
+        [self testNSValue];
     }
 }
 
@@ -856,6 +858,21 @@ NSString * runCommand(NSString* c) {
         [alert promise].then(^{
         });
     });;
+}
+
+#pragma mark - NSValue test
+
+typedef struct CustomStruct {
+    int value;
+} CustomStruct;
+
+-(void)testNSValue {
+    CustomStruct sturct = (CustomStruct){123};
+
+    NSValue *v = [NSValue valueWithBytes:&sturct objCType:@encode(CustomStruct)];
+
+    CustomStruct sss;
+    [v getValue:&sss];
 }
 
 @end
