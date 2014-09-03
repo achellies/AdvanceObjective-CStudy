@@ -829,7 +829,8 @@ NSString * runCommand(NSString* c) {
     }).then(^() {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:@"图片加载成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
-        [alert promise].then(^{
+        [alert promise].then(^(NSArray *result){
+            printf("");
         });
     }).catch(^(NSError *error){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromiseKit" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
